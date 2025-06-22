@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(249, 247, 247, 0.3);
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.resume-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.left {
+  flex-shrink: 0;
+}
+
+.right {
+  max-width: 650px;
+}
+
+.profile-pic {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  border: none;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #C29393;
+}
+
+.name, .alias, .joy, .best {
+  color: #C29393;
+  font-style: italic;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.works-section {
+  background-color: #1a1a1a;
+  background-image: radial-gradient(#aaa 1px, transparent 1px);
+  background-size: 20px 20px;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  background-color: #3b5136;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.works-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Work Cards */
+.work-card {
+  width: 250px;
+  background-color: rgba(150, 150, 150, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.work-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.work-title {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.work-description {
+  font-size: 0.9rem;
+  padding: 0 10px 15px;
+  color: #ddd;
+}
+
+/* Hover effect for all cards on grid hover */
+.works-grid:hover .work-card {
+  opacity: 0.5;
+  transform: scale(0.9);
+  filter: blur(3px);
+  transition: 0.5s ease;
+}
+
+/* Hover effect on individual card */
+.works-grid .work-card:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  filter: blur(0);
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.section-subtitle {
+      font-size: 1.8rem;
+      color: #C29393;
+      margin: 30px 0 15px;
+      text-align: center;
+    }
+
+    #skills .works-grid {
+      gap: 20px;
+    }
+
+    #skills .work-card {
+      width: 200px;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+
+    #skills .work-title {
+      font-size: 1rem;
+      padding: 5px 0;
+      color: #fff;
+      text-align: center;
+    }
+
+.section-wrapper {
+  background-color: #1d1c1c;
+}
+
+.about-section {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background: linear-gradient(to bottom, #1d2b1f, #2f4f2f);
+  color: #ffffff;
+  padding: 80px 20px;  
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2rem; 
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  background: #ccc;
+  margin: 8px auto 0;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px; 
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-left {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-pic {
+  width: 600px; 
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.about-right {
+  flex: 2 1 400px;
+  font-size: 0.1rem;         /* ← SMALLER text size (0.9rem works well visually) */
+  line-height: 1.5;          /* ← Balanced spacing between lines */
+  color: #ddd;               /* ← Softer color for readability */
+  max-width: 800px;          /* ← LIMIT width to stop stretching wide */
+}
+
+.about-right p {
+  margin-bottom: 15px;       /* ← Less space between paragraphs */
+}
+
+.about-right .highlight {
+  color: #C29393;
+  font-style: italic;
+}
