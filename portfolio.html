@@ -6,16 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sheena Romfel Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-  <header>
+   <!-- Navbar -->
+<header>
     <nav class="navbar">
       <div class="nav-links">
         <a href="#works">Works</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#affiliations">Affiliations</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About Me</a>
       </div>
       <button class="resume-btn" onclick="downloadResume()">Download Resume</button>
     </nav>
@@ -43,10 +47,11 @@
   </section>
 
   <!-- My Works Section -->
-  <section class="works-section" id="works">
+<section class="works-section" id="works">
     <h2 class="section-title">My Works</h2>
     <div class="works-grid">
-
+      
+      <a href="https://www.figma.com/proto/dllKxFnKnfuElvDFd5rDu3/CoffeByte?node-id=1-821&t=M8hGL83nlCdszABQ-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A821" target="_blank" class="work-card-link"></a>
        <div class="work-card">
         <img src="images/ATOF.png" alt="Work 2" class="work-img">
         <h3 class="work-title">ATOF</h3>
@@ -55,7 +60,9 @@
           This was a project during my second year at Uni</br>
           It project had made me more interested in UI/UX </p>
       </div>
+      </a>
 
+      <a href="https://www.figma.com/proto/hHSzdPr5bnpN2F6OsQFYTF/Untitled?node-id=0-1&t=bajB7c6z5hL5Rkm3-1" target="_blank" class="work-card-link">
       <div class="work-card">
         <img src="images/KapeKompas.png" alt="Work 1" class="work-img">
         <h3 class="work-title">KapeKompas</h3>
@@ -65,7 +72,9 @@
           It was a project that we enjoyed,</br>
           and sparked my pursue in developing a UI/UX design. </p>
       </div>
+      </a>
 
+      <a href="https://www.figma.com/proto/dllKxFnKnfuElvDFd5rDu3/CoffeByte?node-id=1-821&t=M8hGL83nlCdszABQ-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A821" target="_blank" class="work-card-link">
       <div class="work-card">
         <img src="images/CoffeeByte.png" alt="Work 3" class="work-img">
         <h3 class="work-title">CoffeeByte</h3>
@@ -74,36 +83,48 @@
           A project that made our last year at Uni much more interesting</br>
           It was huge challenge in developing this app.</br>
           nether the less, I am very greatful for this challenge</br>
-          all the ups and downs</br>
+          all the ups and downs</p>
       </div>
+      </a>
+
     </div>
 
   </section>
-  <section class="works-section" id="certificates">
+
+ <section class="works-section" id="certificates">
     <h2 class="section-title">Certificates</h2>
     <div class="works-grid">
-      <div class="work-card">
-        <img src="images/Canva.jpg" alt="Certificate 1" class="work-img">
-        <h3 class="work-title">Graphic Design Essentials</h3>
-        <p class="work-description">Canva</p>
-      </div>
-
-      <div class="work-card">
-        <img src="images/Wadhani.jpg" alt="Certificate 2" class="work-img">
-        <h3 class="work-title">Problem Solving  & Innovation </h3>
-        <p class="work-description">Wadhani Foundation.</p>
-      </div>
-
-      <div class="work-card">
-        <img src="images/Wadhani.jpg" alt="Certificate 3" class="work-img">
-        <h3 class="work-title">Impactful Writing Skills</h3>
-        <p class="work-description">Wadhani Foundation</p>
-      </div>
+    <div class="work-card">
+      <img src="images/Canva.jpg" data-full="images/CanvaCert.png" alt="Certificate 1" class="work-img lightbox-trigger">
+      <h3 class="work-title">Graphic Design Essentials</h3>
+      <p class="work-description">Canva</p>
     </div>
-  </section>
+
+    <div class="work-card">
+      <img src="images/Wadhani.jpg" data-full="images/Wadhani1.png" alt="Certificate 2" class="work-img lightbox-trigger">
+      <h3 class="work-title">Problem Solving & Innovation</h3>
+      <p class="work-description">Wadhani Foundation</p>
+    </div>
+
+    <div class="work-card">
+      <img src="images/Wadhani.jpg" data-full="images/Wadhani2.png" alt="Certificate 3" class="work-img lightbox-trigger">
+      <h3 class="work-title">Impactful Writing Skills</h3>
+      <p class="work-description">Wadhani Foundation</p>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Overlay (global, reusable for all images) -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Full Size Image">
+</div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Full Size Image">
+</div>
 
    <!-- Affiliations Section -->
-  <section class="works-section" id="affiliations">
+<section class="works-section" id="affiliations">
     <h2 class="section-title">Affiliations</h2>
     <div class="works-grid">
       <div class="work-card">
@@ -135,7 +156,7 @@
   </section>
 
   <!-- Skills Section -->
-  <section class="works-section" id="skills">
+<section class="works-section" id="skills">
     <h2 class="section-title">Skills</h2>
 
     <!-- Hard Skills -->
@@ -183,9 +204,11 @@
     </div>
   </section>
 
-<div class="section-wrapper">
-  <section class="about-section">
+
+  <div class="section-wrapper">
+  <section class="about-section" id="about">
     <h2 class="about-title">About Me</h2>
+    <div class="about-content">
 
     <div class="about-content">
       <div class="about-left">
@@ -213,7 +236,61 @@
   </section>
 </div>
 
-  <script src="script.js"></script>
+<!-- Footer Section -->
+<div class="footer-wrapper">
+  <footer class="footer">
+  <h2 class="footer-title">Let's Connect</h2>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/Sheena-Romfel-Mabanta" target="_blank">
+      <i class="fab fa-linkedin"></i> Sheena-Romfel-Mabanta
+    </a>
+    <a href="https://github.com/SheenaRomfel" target="_blank">
+      <i class="fab fa-github"></i> Sheena Romfel
+    </a>
+    <a href="https://www.facebook.com/YourFacebookUsername" target="_blank">
+      <i class="fab fa-facebook"></i> Sheena Romfel
+    </a>
+    <a href="https://www.instagram.com/_sheenko__/" target="_blank">
+      <i class="fab fa-instagram"></i> _sheenko__
+    </a>
+  </div>
+</footer>
+
+<script>
+    function downloadResume() {
+      window.open('Mabanta_resume.pdf', '_blank'); // Make sure "resume.pdf" is in your project directory
+    }
+
+    function openLightbox(imageSrc) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  lightboxImg.src = imageSrc;
+  lightbox.classList.add('show');
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('show');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const triggers = document.querySelectorAll('.lightbox-trigger');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  triggers.forEach(img => {
+    img.addEventListener('click', (e) => {
+      const fullSrc = img.getAttribute('data-full') || img.src; // fallback if no data-full
+      lightboxImg.src = fullSrc;
+      lightbox.classList.add('show');
+    });
+  });
+});
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('show');
+}
+
+  </script>
 </body>
 
 </html>

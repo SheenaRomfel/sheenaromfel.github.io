@@ -10,6 +10,13 @@ body, html {
   color: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -181,6 +188,31 @@ p {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.lightbox.show {
+  display: flex;
+  cursor: zoom-out;
+}
+
 .section-subtitle {
       font-size: 1.8rem;
       color: #C29393;
@@ -272,4 +304,61 @@ p {
 .about-right .highlight {
   color: #C29393;
   font-style: italic;
+}
+
+.footer-wrapper {
+  background-color: #2f4f2f;  /* Match the start color of your gradient */
+}
+
+
+.footer {
+  background: linear-gradient(to right, #2f4f2f, #c29393);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: #080808;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: #ccc;
+  margin: 8px auto 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-links i {
+  font-size: 1.5rem;
+}
+
+/* Icon hover effect */
+.social-links a:hover {
+  opacity: 0.8;
 }
