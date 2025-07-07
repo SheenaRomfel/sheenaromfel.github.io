@@ -8,6 +8,7 @@ body, html {
   height: 100%;
   font-family: 'Arial', sans-serif;
   color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -18,14 +19,16 @@ html {
 
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(249, 247, 247, 0.3);
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 15px 30px;
-  background: rgba(249, 247, 247, 0.3);
-  position: absolute;
-  width: 100%;
-  top: 0;
+  z-index: 999;
 }
 
 .nav-links a {
