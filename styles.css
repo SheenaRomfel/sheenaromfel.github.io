@@ -23,7 +23,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(249, 247, 247, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -50,29 +50,79 @@ html {
   font-weight: 600;
 }
 
+
 .hero {
   position: relative;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end; /* pushes text to the right */
+  align-items: center;       /* vertically center */
+  text-align: right;         /* align text inside to the right */
+  padding-right: 5rem;       /* space from right edge */
+   background: url("images/background.jpg") center/cover no-repeat; 
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  z-index: 0;
+}
+
+.hero-text h2 {
+ font-family: 'Playfair Display', serif; /* elegant serif font */
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+   color: #ffffff;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif; /* elegant serif font */
+  font-size: 10rem;
+  font-weight: 700;
+   color: #ffffff;
+}
+
+
+.hero-text h1,
+.hero-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: #e5e5e5 !important; /* force white */
+  position: relative; 
+  z-index: 2; /* make sure text is above overlay */
+}
+
+
+/* Mobile: center the text again so it doesn’t get squished */
+@media (max-width: 768px) {
+  .hero-text {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    padding: 0 24px;
+  }
 }
 
 .background-img {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -2;
+  object-fit: cover;   /* keeps aspect ratio, fills container */
+  object-position: center; /* centers the subject */
+  z-index: -1;         /* push behind text */
 }
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
+
 
 .hero-content {
   display: flex;
