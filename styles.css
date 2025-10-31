@@ -18,6 +18,8 @@ html {
 
 
 
+
+
 .navbar {
   position: fixed;
   top: 0;
@@ -362,6 +364,78 @@ p {
 .footer-wrapper {
   background-color: #2f4f2f;  /* Match the start color of your gradient */
 }
+
+/* --- Platforms Section (Refined) --- */
+#platforms,
+.platforms-section {
+  background-color: #0f0f0f; /* match dark theme */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+  background-repeat: repeat;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+.platform-card:hover .platform-logo {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+}
+
+/* Section Title */
+.section-title {
+  color: #fff;
+  background-color: #2f402c;
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 25px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+/* Platform Grid */
+.platforms-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+
+/* Platform Card */
+.platform-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 50px;
+  padding: 12px 28px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Platform Logo */
+.platform-logo {
+  width: 40px;
+  height: auto;
+  margin-right: -5px;
+  z-index: 2;
+}
+
+/* Platform Name */
+.platform-name {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 18px 40px;
+  border-radius: 50px;
+  z-index: 1;
+  margin-left: -10px;
+}
+
 
 
 .footer {
