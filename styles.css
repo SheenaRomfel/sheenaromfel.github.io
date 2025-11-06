@@ -243,30 +243,207 @@ p {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
+
+/* Lightbox General */
 .lightbox {
   display: none;
   position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
-}
-
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  z-index: 9999;
 }
 
 .lightbox.show {
   display: flex;
-  cursor: zoom-out;
 }
+
+.lightbox-content {
+  display: flex;
+  max-width: 90%;
+  width: 1100px;
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.lightbox-left,
+.lightbox-right {
+  flex: 1;
+  position: relative;
+}
+
+/* Certificate Image */
+.lightbox-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+/* Description Panel */
+.lightbox-right {
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.85);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.lightbox-right h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.lightbox-right p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.lightbox-close:hover {
+  color: #aaa;
+}
+
+
+/* --- Lightbox (Certificate Popup) --- */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 40px;
+}
+
+.lightbox.show {
+  display: flex;
+}
+
+.lightbox-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background:#fff;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  width: 800px;
+  gap: 20px;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Left side (certificate image) */
+.lightbox-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Right side (description) */
+.lightbox-right {
+  padding: 30px;
+  background: url("images/bg.png") center/cover no-repeat;  /* <--- your background image path here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 20px;
+}
+
+.lightbox-right::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* adjust darkness */
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.lightbox-right h2,
+.lightbox-right p {
+  position: relative;
+  z-index: 1; /* makes sure text stays above overlay */ 
+
+}
+
+.lightbox-right h3 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+
+.lightbox-right p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+}
+
+/* Close Button */
+.lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 2.5rem;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .lightbox-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .lightbox-left,
+  .lightbox-right {
+    width: 100%;
+    border-left: none;
+  }
+
+  .lightbox-right {
+    border-top: 2px solid #ccc;
+  }
+}
+
+
+
 
 .section-subtitle {
       font-size: 1.8rem;
