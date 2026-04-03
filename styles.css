@@ -61,7 +61,7 @@ html {
   align-items: center;       /* vertically center */
   text-align: right;         /* align text inside to the right */
   padding-right: 5rem;       /* space from right edge */
-   background: url("images/background.jpg") center/cover no-repeat; 
+   background: url("images/background.png") center/cover no-repeat; 
 }
 
 .hero-text {
