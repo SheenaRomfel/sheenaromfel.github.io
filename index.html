@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sheena Romfel Portfolio</title>
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
@@ -12,270 +13,227 @@
 
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="nav-links">
-        <a href="#Works">Works</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#affiliations">Affiliations</a>
-        <a href="#skills">Skills</a>
-        <a href="#platforms">Platforms</a>
-        <a href="#about">About Me</a>
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="#Works">Works</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#affiliations">Affiliations</a>
+      <a href="#skills">Skills</a>
+      <a href="#platforms">Platforms</a>
+    </div>
+    <button class="resume-btn" onclick="downloadResume()">Download Resume</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h2>Sheena Romfel Mabanta</h2>
+    <h1>Portfolio</h1>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="works-section" id="Works">
+  <h2 class="section-title">My Works</h2>
+
+  <div class="works-grid">
+
+    <a href="https://sheenaromfel.github.io/ATOF/" target="_blank" class="work-card-link">
+      <div class="work-card">
+        <img src="images/ATOF.png" class="work-img">
+        <h3 class="work-title">ATOF</h3>
+        <p class="work-description">
+          A Taste of Filipino Cuisine.<br>
+          This was a project during my second year at Uni.<br>
+          This project made me more interested in UI/UX.
+        </p>
       </div>
-      <button class="resume-btn" onclick="downloadResume()">Download Resume</button>
-    </nav>
-  </header>
+    </a>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h2>Sheena Romfel Mabanta</h2>
-      <h1>Portfolio</h1>
-    </div>
-  </section>
+    <a href="https://www.figma.com/proto/hHSzdPr5bnpN2F6OsQFYTF" target="_blank" class="work-card-link">
+      <div class="work-card">
+        <img src="images/KapeKompas.png" class="work-img">
+        <h3 class="work-title">KapeKompas</h3>
+        <p class="work-description">
+          Group project during third year.<br>
+          Sparked my interest in UI/UX design.
+        </p>
+      </div>
+    </a>
 
-  <!-- My Works Section -->
-  <section class="works-section" id="Works">
-    <h2 class="section-title">My Works</h2>
-    <div class="works-grid">
+    <a href="https://www.figma.com/proto/dllKxFnKnfuElvDFd5rDu3" target="_blank" class="work-card-link">
+      <div class="work-card">
+        <img src="images/CoffeeByte.png" class="work-img">
+        <h3 class="work-title">CoffeeByte</h3>
+        <p class="work-description">
+          Capstone project.<br>
+          A challenging but rewarding experience.
+        </p>
+      </div>
+    </a>
 
-      <a href="https://sheenaromfel.github.io/ATOF/" target="_blank" class="work-card-link">
-        <div class="work-card">
-          <img src="images/ATOF.png" alt="Work 2" class="work-img">
-          <h3 class="work-title">ATOF</h3>
-          <p class="work-description">
-            ATOF or A Taste of Filipino Cuisine.<br>
-            This was a project during my second year at Uni.<br>
-            This project made me more interested in UI/UX.
-          </p>
-        </div>
-      </a>
+    <a href="https://www.figma.com/proto/XOTtNIVOa4tq7ESq71gzTG" target="_blank" class="work-card-link">
+      <div class="work-card">
+        <img src="images/SunnyCafe.png" class="work-img">
+        <h3 class="work-title">Sunny Cafe</h3>
+        <p class="work-description">
+          Personal UI/UX exploration project<br>
+          with a simulated client.
+        </p>
+      </div>
+    </a>
 
-      <a href="https://www.figma.com/proto/hHSzdPr5bnpN2F6OsQFYTF/Untitled?node-id=0-1&t=bajB7c6z5hL5Rkm3-1" target="_blank" class="work-card-link">
-        <div class="work-card">
-          <img src="images/KapeKompas.png" alt="Work 1" class="work-img">
-          <h3 class="work-title">KapeKompas</h3>
-          <p class="work-description">
-            KapeKompas was a group project during my third year at Uni.<br>
-            The idea and the UI/UX was a group effort.<br>
-            It was a project that we enjoyed,<br>
-            and sparked my pursue in developing a UI/UX design.
-          </p>
-        </div>
-      </a>
+  </div>
+</section>
 
-      <a href="https://www.figma.com/proto/dllKxFnKnfuElvDFd5rDu3/CoffeByte?node-id=1-821&t=M8hGL83nlCdszABQ-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A821" target="_blank" class="work-card-link">
-        <div class="work-card">
-          <img src="images/CoffeeByte.png" alt="Work 3" class="work-img">
-          <h3 class="work-title">CoffeeByte</h3>
-          <p class="work-description">
-            CoffeeByte was our Capstone.<br>
-            A project that made our last year at Uni much more interesting.<br>
-            It was a huge challenge in developing this app.<br>
-            Nevertheless, I am very grateful for this challenge and all the ups and downs.
-          </p>
-        </div>
-      </a>
+<!-- CERTIFICATES -->
+<section class="works-section" id="certificates">
+  <h2 class="section-title">Certificates</h2>
 
-      <a href="https://www.figma.com/proto/XOTtNIVOa4tq7ESq71gzTG/Sunny-Cafe?node-id=231-5&p=f&t=GUFyaEfkvJQ4kaBW-0&scaling=scale-down&content-scaling=fixed&page-id=105%3A2401&starting-point-node-id=231%3A5" target="_blank" class="work-card-link">
-        <div class="work-card">
-          <img src="images/SunnyCafe.png" alt="Work 3" class="work-img">
-          <h3 class="work-title">Sunny Cafe</h3>
-          <p class="work-description">
-            As I wanted to explore more in UI/UX<br>
-            I asked my cousin to be a fake client <br>
-            as  an onwner of a coffee shop  
-          </p>
-        </div>
-      </a>
+  <div class="works-grid">
 
-    </div>
-  </section>
-
-  <section class="works-section" id="certificates">
-    <h2 class="section-title">Certificates</h2>
-    <div class="works-grid">
     <div class="work-card">
-      <img src="images/Canva.jpg" data-full="images/CanvaCert.png" alt="Certificate 1" class="work-img lightbox-trigger">
+      <img src="images/Canva.jpg" data-full="images/CanvaCert.png" class="work-img lightbox-trigger">
       <h3 class="work-title">Graphic Design Essentials</h3>
       <p class="work-description">Canva</p>
     </div>
 
     <div class="work-card">
-      <img src="images/Canva.jpg" data-full="images/canva_work.png" alt="Certificate 1" class="work-img lightbox-trigger">
-      <h3 class="work-title">Canva for Work </h3>
+      <img src="images/Canva.jpg" data-full="images/canva_work.png" class="work-img lightbox-trigger">
+      <h3 class="work-title">Canva for Work</h3>
       <p class="work-description">Canva</p>
     </div>
 
     <div class="work-card">
-      <img src="images/LinkedIn.png" data-full="images/cer_emo.png" alt="Certificate 1" class="work-img lightbox-trigger">
-      <h3 class="work-title">Developing Emotional Intelligence </h3>
+      <img src="images/LinkedIn.png" data-full="images/cer_emo.png" class="work-img lightbox-trigger">
+      <h3 class="work-title">Developing Emotional Intelligence</h3>
       <p class="work-description">LinkedIn</p>
     </div>
 
     <div class="work-card">
-      <img src="images/LinkedIn.png" data-full="images/cer_emo.png" alt="Certificate 1" class="work-img lightbox-trigger">
-      <h3 class="work-title">Developing Emotional Intelligence </h3>
-      <p class="work-description">LinkedIn</p>
-    </div>
-
-    <div class="work-card">
-      <img src="images/Wadhani.jpg" data-full="images/Wadhani2.png" alt="Certificate 3" class="work-img lightbox-trigger">
+      <img src="images/Wadhani.jpg" data-full="images/Wadhani2.png" class="work-img lightbox-trigger">
       <h3 class="work-title">Problem Solving & Innovation</h3>
       <p class="work-description">Wadhani Foundation</p>
     </div>
 
     <div class="work-card">
-      <img src="images/Wadhani.jpg" data-full="images/Wadhani1.png" alt="Certificate 2" class="work-img lightbox-trigger">
+      <img src="images/Wadhani.jpg" data-full="images/Wadhani1.png" class="work-img lightbox-trigger">
       <h3 class="work-title">Impactful Writing Skills</h3>
       <p class="work-description">Wadhani Foundation</p>
     </div>
 
     <div class="work-card">
-      <img src="images/cisco.png" data-full="images/Networking.png" alt="Certificate 2" class="work-img lightbox-trigger">
-      <h3 class="work-title"> Enterprise Networking, Security, and Automation</h3>
+      <img src="images/cisco.png" data-full="images/Networking.png" class="work-img lightbox-trigger">
+      <h3 class="work-title">Enterprise Networking</h3>
       <p class="work-description">Cisco Networking Academy</p>
     </div>
 
   </div>
 </section>
 
-<!-- Lightbox Overlay (global, reusable for all images) -->
-<div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img" src="" alt="Full Size Image">
-</div>
-
-  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img" src="" alt="Full Size Image">
-</div>
-
-
-  <!-- Affiliations Section -->
-  <section class="works-section" id="affiliations">
-    <h2 class="section-title">Affiliations</h2>
-<div class="works-grid">
-
-    <div class="work-card">
-        <img src="images/Parasat.jpg" alt="Affiliation 2" class="work-img">
-        <h3 class="work-title">Student Intern</h3>
-        <p class="work-description">Stedent Intern at Parasat HD</p>
-      </div>
- 
-      <div class="work-card">
-        <img src="images/GDSC.jpg" alt="Affiliation 2" class="work-img">
-        <h3 class="work-title">Community Relations Officer</h3>
-        <p class="work-description">Promoted as Community Relations Officer at Google Developers Student Club<br>November 2023 – August 2024</p>
-      </div>
-
-      <div class="work-card">
-        <img src="images/GDSC.jpg" alt="Affiliation 3" class="work-img">
-        <h3 class="work-title">Community Formations Officer</h3>
-        <p class="work-description">Core team member as Community Formations Officer at Google Developers Student Club<br>October 2022 – September 2023</p>
-      </div>
-
-      <div class="work-card">
-        <img src="images/KENLEX.png" alt="Affiliation 4" class="work-img">
-        <h3 class="work-title">IT/Client Coordinator</h3>
-        <p class="work-description">First job after graduating. Grateful for the opportunity.<br>October 2025 – Present</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="works-section" id="skills">
-    <h2 class="section-title">Skills</h2>
-
-    <h3 class="section-subtitle">Hard Skills</h3>
-    <div class="works-grid">
-      <div class="work-card"><h3 class="work-title">UI/UX Design</h3></div>
-      <div class="work-card"><h3 class="work-title">Roboflow Integration</h3></div>
-      <div class="work-card"><h3 class="work-title">Web Development</h3></div>
-      <div class="work-card"><h3 class="work-title">Machine Learning (Basic, image classification)</h3></div>
-    </div>
-
-    <h3 class="section-subtitle">Soft Skills</h3>
-    <div class="works-grid">
-      <div class="work-card"><h3 class="work-title">Reflective and Growth-Oriented</h3></div>
-      <div class="work-card"><h3 class="work-title">Empathetic and Supportive</h3></div>
-      <div class="work-card"><h3 class="work-title">Faith-Driven Leadership</h3></div>
-      <div class="work-card"><h3 class="work-title">Strong Communication Skills</h3></div>
-      <div class="work-card"><h3 class="work-title">Event Planning and Coordination</h3></div>
-    </div>
-  </section>
-
-  <!-- Platforms Section -->
-  <section id="platforms" class="platforms-section">
-    <h2 class="section-title">Platforms</h2>
-
-    <div class="platforms-grid">
-      <div class="platform-card"><img src="images/Figma.png" alt="Figma Logo" class="platform-logo"><span class="platform-name">Figma</span></div>
-      <div class="platform-card"><img src="images/VScode.png" alt="VS Code Logo" class="platform-logo"><span class="platform-name">VS Code</span></div>
-      <div class="platform-card"><img src="images/GITHUB.png" alt="GitHub Logo" class="platform-logo"><span class="platform-name">GitHub</span></div>
-      <div class="platform-card"><img src="images/CANVA_LOGO.png" alt="Canva Logo" class="platform-logo"><span class="platform-name">Canva</span></div>
-      <div class="platform-card"><img src="images/roboflow.png" alt="Roboflow Logo" class="platform-logo"><span class="platform-name">Roboflow</span></div>
-      <div class="platform-card"><img src="images/gmail.png" alt="Gmail" class="platform-logo"><img src="images/drive.png" alt="Drive" class="platform-logo"><span class="platform-name">Google Workspace<img src="images/sheets.png" alt="Sheets" class="platform-logo"><img src="images/docs.png" alt="Sheets" class="platform-logo"></span></div>
-
-    </div>
-  </section>
-
+<!-- LIGHTBOX (ONLY ONE) -->
 <div id="lightbox" class="lightbox">
   <div class="lightbox-content">
     <div class="lightbox-left">
-      <img id="lightbox-img" src="" alt="Certificate Image">
-    </div>
-    <div class="lightbox-right">
-      <div id="lightbox-description"></div>
+      <img id="lightbox-img" src="" alt="Full Image">
     </div>
     <span class="lightbox-close">&times;</span>
   </div>
 </div>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <h2 class="footer-title">Let's Connect</h2>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/Sheena-Romfel-Mabanta" target="_blank"><i class="fab fa-linkedin"></i> Sheena-Romfel-Mabanta</a>
-      <a href="https://github.com/SheenaRomfel" target="_blank"><i class="fab fa-github"></i> Sheena Romfel</a>
-      <a href="https://www.facebook.com/r.sheenako" target="_blank"><i class="fab fa-facebook"></i> Sheena Romfel</a>
-      <a href="https://www.instagram.com/_sheenko__/" target="_blank"><i class="fab fa-instagram"></i> _sheenko__</a>
+<!-- AFFILIATIONS -->
+<section class="works-section" id="affiliations">
+  <h2 class="section-title">Affiliations</h2>
+
+  <div class="works-grid">
+    <div class="work-card">
+      <img src="images/Parasat.jpg" class="work-img">
+      <h3 class="work-title">Student Intern</h3>
+      <p class="work-description">Student Intern at Parasat HD</p>
     </div>
-  </footer>
 
-  <!-- JavaScript -->
-  <script>
-    function downloadResume() {
-      window.open('Resume.pdf', '_blank');
-    }
+    <div class="work-card">
+      <img src="images/GDSC.jpg" class="work-img">
+      <h3 class="work-title">Community Relations Officer</h3>
+    </div>
 
+    <div class="work-card">
+      <img src="images/KENLEX.png" class="work-img">
+      <h3 class="work-title">IT/Client Coordinator</h3>
+    </div>
+  </div>
+</section>
 
-    
+<!-- SKILLS -->
+<section class="works-section" id="skills">
+  <h2 class="section-title">Skills</h2>
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const lightbox = document.getElementById("lightbox");
-      const lightboxImg = document.getElementById("lightbox-img");
-      const lightboxDesc = document.getElementById("lightbox-description");
-      const closeBtn = document.querySelector(".lightbox-close");
+  <h3 class="section-subtitle">Hard Skills</h3>
+  <div class="works-grid">
+    <div class="work-card"><h3 class="work-title">UI/UX Design</h3></div>
+    <div class="work-card"><h3 class="work-title">Web Development</h3></div>
+    <div class="work-card"><h3 class="work-title">Machine Learning</h3></div>
+  </div>
 
-      document.querySelectorAll(".lightbox-trigger").forEach(img => {
-        img.addEventListener("click", () => {
-          lightboxImg.src = img.dataset.full || img.src;
-          lightboxDesc.textContent = img.dataset.description || "";
-          lightbox.style.display = "flex";
-        });
-      });
+  <h3 class="section-subtitle">Soft Skills</h3>
+  <div class="works-grid">
+    <div class="work-card"><h3 class="work-title">Communication</h3></div>
+    <div class="work-card"><h3 class="work-title">Empathy</h3></div>
+    <div class="work-card"><h3 class="work-title">Leadership</h3></div>
+  </div>
+</section>
 
-      closeBtn.addEventListener("click", () => {
-        lightbox.style.display = "none";
-      });
+<!-- PLATFORMS -->
+<section id="platforms" class="platforms-section">
+  <h2 class="section-title">Platforms</h2>
 
-      lightbox.addEventListener("click", (e) => {
-        if (e.target.id === "lightbox") {
-          lightbox.style.display = "none";
-        }
-      });
+  <div class="platforms-grid">
+    <div class="platform-card">Figma</div>
+    <div class="platform-card">VS Code</div>
+    <div class="platform-card">GitHub</div>
+    <div class="platform-card">Canva</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <h2 class="footer-title">Let's Connect</h2>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/Sheena-Romfel-Mabanta" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://github.com/SheenaRomfel" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function downloadResume() {
+  window.open('Resume.pdf', '_blank');
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  document.querySelectorAll(".lightbox-trigger").forEach(el => {
+    el.addEventListener("click", () => {
+      img.src = el.dataset.full || el.src;
+      lightbox.style.display = "flex";
     });
-  </script>
+  });
+
+  closeBtn.onclick = () => lightbox.style.display = "none";
+});
+</script>
+
 </body>
 </html>
