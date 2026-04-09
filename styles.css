@@ -104,6 +104,19 @@ body, html {
   border: 1px solid #0E1B3A;
 }
 
+
+.section-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  background-color: #b4b7c5;
+  color:#020e2c;
+  padding: 8px 10px;
+
+  border: 1px solid #0E1B3A;
+}
+
+
 /* GRID */
 .works-grid {
   display: flex;
@@ -229,11 +242,53 @@ body, html {
   cursor: pointer;
 }
 
-/* SKILLS */
+/* SKILLS SECTION */
+.skills-section {
+  background-color: #E0E1DA;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* TITLE (Skills) */
+.skills-section .section-title {
+  margin-bottom: 40px;
+}
+
+/* SUBTITLE BARS (Hard/Soft Skills) */
 .section-subtitle {
-  font-size: 1.8rem;
-  color: #C29393;
-  margin: 30px 0 15px;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto 20px;
+  padding: 10px;
+  background-color: #9fa3b1;
+  color: #0E1B3A;
+  border: 1px solid #0E1B3A;
+  border-radius: 5px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* GRID */
+.skills-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* PILLS */
+.skill-pill {
+  background: #0E1B3A;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.skill-pill:hover {
+  transform: translateY(-5px);
 }
 
 /* FIXED FONT SIZE BUG */
