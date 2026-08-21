@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheena Romfel Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="#Works">Works</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#affiliations">Affiliations</a>
+      <a href="#skills">Skills</a>
+      <a href="#platforms">Platforms</a>
+    </div>
+    <button class="resume-btn" onclick="downloadResume()">Download Resume</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h2>Sheena Romfel Mabanta</h2>
+    <h1>Portfolio</h1>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="works-section" id="Works">
+  <h2 class="section-title">My Works</h2>
+
+  <div class="works-grid">
+
+    <a href="https://sheenaromfel.github.io/ATOF/" target="_blank" class="work-card-link">
+      <div class="work-card">
+        <img src="images/ATOF.png" class="work-img">
+        <h3 class="work-title">ATOF</h3>
+        <p class="work-description">
+          A Taste of Filipino Cuisine.<br>
+          This was a project during my second year at Uni.<br>
+          This project made me more interested in UI/UX.
+        </p>
+      </div>
+    </a>
+
+    <a href="https://www.figma.com/proto/hHSzdPr5bnpN2F6OsQFYTF" target="_blank" class="work-card-link">
+      <div class="work-card">
+        <img src="images/KapeKompas.png" class="work-img">
+        <h3 class="work-title">KapeKompas</h3>
+        <p class="work-description">
+          Group project during third year.<br>
+          Sparked my interest in UI/UX design.
+        </p>
+      </div>
+    </a>
+
+    <a href="https://www.figma.com/proto/dllKxFnKnfuElvDFd5rDu3" target="_blank" class="work-card-link">
+      <div class="work-card">
+        <img src="images/CoffeeByte.png" class="work-img">
+        <h3 class="work-title">CoffeeByte</h3>
+        <p class="work-description">
+          Capstone project.<br>
+          A challenging but rewarding experience.
+        </p>
+      </div>
+    </a>
+
+    <a href="https://www.figma.com/proto/XOTtNIVOa4tq7ESq71gzTG" target="_blank" class="work-card-link">
+      <div class="work-card">
+        <img src="images/SunnyCafe.png" class="work-img">
+        <h3 class="work-title">Sunny Cafe</h3>
+        <p class="work-description">
+          Personal UI/UX exploration project<br>
+          with a simulated client.
+        </p>
+      </div>
+    </a>
+
+    <a href="https://www.figma.com/proto/bmN6RSDYsIcQBFbv3QbQmE/Kenlex?node-id=2618-4" target="_blank" class="work-card-link">
+      <div class="work-card">
+        <img src="images/Kenlex.png" class="work-img">
+        <h3 class="work-title">Kenlex Admin</h3>
+        <p class="work-description">
+          We created a prototype for Operations management<br>
+          for the company I worked for </p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="works-section" id="certificates">
+  <h2 class="section-title">Certificates</h2>
+
+  <div class="works-grid">
+
+    <div class="work-card">
+      <img src="images/Canva.jpg" data-full="images/CanvaCert.png" class="work-img lightbox-trigger">
+      <h3 class="work-title">Graphic Design Essentials</h3>
+      <p class="work-description">Canva</p>
+    </div>
+
+    <div class="work-card">
+      <img src="images/Canva.jpg" data-full="images/canva_work.png" class="work-img lightbox-trigger">
+      <h3 class="work-title">Canva for Work</h3>
+      <p class="work-description">Canva</p>
+    </div>
+
+    <div class="work-card">
+      <img src="images/LinkedIn.png" data-full="images/cer_emo.png" class="work-img lightbox-trigger">
+      <h3 class="work-title">Developing Emotional Intelligence</h3>
+      <p class="work-description">LinkedIn</p>
+    </div>
+
+    <div class="work-card">
+      <img src="images/Wadhani.jpg" data-full="images/Wadhani2.png" class="work-img lightbox-trigger">
+      <h3 class="work-title">Problem Solving & Innovation</h3>
+      <p class="work-description">Wadhani Foundation</p>
+    </div>
+
+    <div class="work-card">
+      <img src="images/Wadhani.jpg" data-full="images/Wadhani1.png" class="work-img lightbox-trigger">
+      <h3 class="work-title">Impactful Writing Skills</h3>
+      <p class="work-description">Wadhani Foundation</p>
+    </div>
+
+    <div class="work-card">
+      <img src="images/cisco.png" data-full="images/Networking.png" class="work-img lightbox-trigger">
+      <h3 class="work-title">Enterprise Networking</h3>
+      <p class="work-description">Cisco Networking Academy</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX (ONLY ONE) -->
+<div id="lightbox" class="lightbox">
+  <div class="lightbox-content">
+    <div class="lightbox-left">
+      <img id="lightbox-img" src="" alt="Full Image">
+    </div>
+    <span class="lightbox-close">&times;</span>
+  </div>
+</div>
+
+<!-- AFFILIATIONS -->
+<section class="works-section" id="affiliations">
+  <h2 class="section-title">Affiliations</h2>
+
+  <div class="works-grid">
+    <div class="work-card">
+      <img src="images/Parasat.jpg" class="work-img">
+      <h3 class="work-title">Student Intern</h3>
+      <p class="work-description">Student Intern at Parasat HD</p>
+    </div>
+
+    <div class="work-card">
+      <img src="images/GDSC.jpg" class="work-img">
+      <h3 class="work-title">Community Relations Officer</h3>
+    </div>
+
+    <div class="work-card">
+      <img src="images/KENLEX.png" class="work-img">
+      <h3 class="work-title">IT/Client Coordinator</h3>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section" id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-container">
+
+    <!-- HARD SKILLS -->
+    <div class="skills-column">
+      <h3 class="skills-heading">Hard Skills</h3>
+
+      <div class="skills-list">
+        <div class="skill-pill">UI/UX Design</div>
+        <div class="skill-pill">Web Development</div>
+        <div class="skill-pill">Coordination</div>
+        <div class="skill-pill">Roboflow Integration</div>
+      </div>
+    </div>
+
+    <!-- LINE -->
+    <div class="skills-divider"></div>
+
+    <!-- SOFT SKILLS -->
+    <div class="skills-column">
+      <h3 class="skills-heading">Soft Skills</h3>
+
+      <div class="skills-list">
+        <div class="skill-pill">Communication</div>
+        <div class="skill-pill">Empathy</div>
+        <div class="skill-pill">Leadership</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section id="platforms" class="platforms-section">
+  <h2 class="section-title">Platforms</h2>
+
+  <div class="platforms-grid">
+
+    <div class="platform-card">
+      <i class="fab fa-figma"></i>
+      <span> Figma</span>
+    </div>
+
+    <div class="platform-card">
+      <i class="fas fa-code"></i>
+      <span> VS Code</span>
+    </div>
+
+    <div class="platform-card">
+      <i class="fab fa-github"></i>
+      <span> GitHub</span>
+    </div>
+
+    <div class="platform-card">
+      <i class="fas fa-palette"></i>
+      <span> Canva</span>
+    </div>
+
+    <div class="platform-card">
+      <i class="fab fa-google"></i>
+      <span> Workspace</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <h2 class="footer-title">Let's Connect</h2>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/Sheena-Romfel-Mabanta" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://github.com/SheenaRomfel" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+
+    <a href="https://www.facebook.com/r.sheenamon" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+
+    <a href="https://www.instagram.com/r.sheenamon/" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+   
+
+  </div>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function downloadResume() {
+  window.open('Resume.pdf', '_blank');
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  document.querySelectorAll(".lightbox-trigger").forEach(el => {
+    el.addEventListener("click", () => {
+      img.src = el.dataset.full || el.src;
+      lightbox.style.display = "flex";
+    });
+  });
+
+  closeBtn.onclick = () => lightbox.style.display = "none";
+});
+</script>
+
+</body>
+</html>
