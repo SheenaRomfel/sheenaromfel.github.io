@@ -63,10 +63,48 @@ body, html {
   box-shadow: 4px 10px 30px #020611;
 }
 
+.hero-description {
+  max-width: 400px;
+  margin: 30px 0 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #0E1B3A;
+  text-align: left;
+}
+
 .overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to right, rgba(0,0,0,0), rgba(8, 2, 69, 0.714));
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 10rem;
+  line-height: 0.9;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  max-width: 500px;
+  margin-left: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #f4f5f7;
+  text-align: left;
 }
 
 .hero-text {
